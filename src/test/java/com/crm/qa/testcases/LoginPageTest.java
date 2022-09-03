@@ -3,6 +3,7 @@ package com.crm.qa.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.crm.qa.base.BaseClass;
@@ -23,11 +24,21 @@ public class LoginPageTest extends BaseClass{
 		loginPage = new LoginPage();	
 	}
 	
+	@Parameters("Browser")			//this parameter will be taken from testing.xml --- but we are running with maven cmd -mvn clean test -DBrowser=chrome  
 	@Test(priority=1)
-	public void loginPageTitleTest(){
+	public void loginPageTitleTest(String BrowserName){
 		String title = loginPage.validateLoginPageTitle();
 		Assert.assertEquals(title, "CRMPRO - CRM software for customer relationship management, sales, and support.");
-	}
+//---------------------------------------------------------------------------------------------------------------------------
+		
+		System.out.println("parameter value :"+BrowserName);    //pratice sending parameter using pom file through jenkins ---
+		if(BrowserName.contains("chrome")) {
+			System.out.println("chrome running ");
+		}
+		else {
+			System.out.println("firfox running ");
+		}
+	} 
 	
 	@Test(priority=2)
 	public void crmLogoImageTest() throws InterruptedException{
