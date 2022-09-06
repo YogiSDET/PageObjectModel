@@ -24,7 +24,7 @@ public class LoginPageTest extends BaseClass{
 		loginPage = new LoginPage();	
 	}
 	
-	@Parameters("Browser")			//this parameter will be taken from testing.xml --- but we are running with maven cmd -mvn clean test -DBrowser=chrome  
+//	@Parameters("Browser")			//this parameter will be taken from testing.xml --- but we are running with maven cmd -mvn clean test -DBrowser=chrome  
 	@Test(priority=1)
 	public void loginPageTitleTest(String BrowserName){
 		String title = loginPage.validateLoginPageTitle();

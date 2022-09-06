@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
-import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.WebEventListener;
 
 public class BaseClass {
@@ -39,11 +38,11 @@ public class BaseClass {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\yogen\\eclipse-workspace\\PageObjectModel\\Browser\\chromedriver.exe");	
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\yogen\\eclipse-dataDrivenFramework\\PageObjectModel\\Browser\\chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\yogen\\eclipse-workspace\\PageObjectModel\\Browser\\geckodriver.exe");	
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\yogen\\eclipse-dataDrivenFramework\\PageObjectModel\\Browser\\geckodriver.exe");	
 			driver = new FirefoxDriver(); 
 		}
 		
