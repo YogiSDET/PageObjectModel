@@ -25,6 +25,7 @@ public class LoginPageTest extends BaseClass{
 	}
 
 	
+	
 	//jenkins practice time created this method to test or check how to send using pom in jenkin     
 	@Parameters("Browser")     //this parameter will be taken from testing.xml --- but we are running with maven cmd -mvn clean test -DBrowser=chrome
 	@Test(priority=1)
@@ -38,6 +39,9 @@ public class LoginPageTest extends BaseClass{
 		}
 		
 	}
+	
+	
+	
 	
 	
 	@Test(priority=2)

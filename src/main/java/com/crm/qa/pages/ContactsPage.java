@@ -26,12 +26,14 @@ public class ContactsPage extends BaseClass {
 	WebElement saveBtn;
 
 	// Initializing the Page Objects:
+	
 	public ContactsPage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	public boolean verifyContactsLabel() {
 		return contactsLabel.isDisplayed();
+		// is present on web page or not 
 	}
 
 	public String selectContactsByName(String name) {
