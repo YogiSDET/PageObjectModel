@@ -87,13 +87,13 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<!-- passing global parameter to using maven to testing to test class-->
-					  
+					 <!--  
 					<systemPropertyVariables>
 					<browser>
 					${Browser}   
 					 </browser>
 					</systemPropertyVariables>
-					
+						-->					
 				</configuration>
 			</plugin>
 		</plugins>
