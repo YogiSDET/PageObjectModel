@@ -1,0 +1,14 @@
+com\crm\qa\crud\EditAddressPage.class
+com\crm\qa\pages\ContactsPage.class
+com\crm\qa\pages\DealsPage.class
+com\crm\qa\pages\HomePage.class
+com\crm\qa\pages\TasksPage.class
+com\crm\qa\pages\LoginPage.class
+com\crm\qa\base\BaseClass.class
+com\crm\qa\crud\AddAddressPage.class
+com\crm\qa\crud\AddressPojo.class
+com\crm\qa\util\TestUtil.class
+com\crm\qa\crud\AddressHomePage.class
+com\crm\qa\pages\SignUpPage.class
+com\crm\qa\util\WebEventListener.class
+com\qa\ExtentReportListener\ExtentReporterNG.class

@@ -83,16 +83,18 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.0.0-M7</version>
 				<configuration>
+				 
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- passing global parameter to using maven to testing to test class--> 
+					<!-- passing global parameter to using maven to testing to test class this is for jenkins --> 
+					<!--
 					<systemPropertyVariables>
 					<browser>
 					${Browser}   
 					 </browser>
 					</systemPropertyVariables>
-										
+				-->					
 				</configuration>
 			</plugin>
 		</plugins>
